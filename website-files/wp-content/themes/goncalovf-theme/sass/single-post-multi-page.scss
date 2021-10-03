@@ -1,0 +1,71 @@
+/**
+ * Get base CSS
+ */
+@import "single";
+
+@import "layout/content-sidebar-single";
+
+/**
+ * Specific CSS
+ */
+.site-header {}
+
+.site-main {
+    margin-bottom: 3rem;
+}
+
+.site-secondary {
+
+    .index-container {
+
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 1.5rem;
+
+            &.index {
+                padding-left: 0;
+            }
+
+            &.closed {
+                display: none;
+            }
+
+            li {
+                position: relative;
+                margin: 0.15rem 0;
+
+                svg {
+                    position: absolute;
+                    top: 0.4rem;
+                    left: -0.7rem;
+                    width: 0.6rem;
+                    padding: 0.1rem;
+
+                    &.active {
+                        @include transform( rotate(90deg) );
+                    }
+                }
+
+                a:hover {
+                    text-decoration: none;
+                }
+
+                div {
+                    padding: 0 0.3rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    &:hover, &.active {
+                        background-color: $color__text_grey_1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.adjacent-posts {
+    margin: 2rem auto 0;
+}

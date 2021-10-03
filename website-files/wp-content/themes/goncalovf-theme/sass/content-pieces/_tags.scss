@@ -1,0 +1,23 @@
+.tags {
+    margin: 0 -0.35rem;
+
+    .tag {
+        margin: 0 0.35rem;
+        font-size: 0.825rem;
+        text-transform: uppercase;
+        border-radius: 3px;
+        background-color: $color__text_grey_1;
+
+        a {
+            padding: 0.125rem 0.25rem;
+        }
+
+        &:hover {
+            background-color: $color__text_grey_3;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

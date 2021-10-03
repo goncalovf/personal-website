@@ -1,0 +1,61 @@
+.site {
+	display: grid;
+	grid-template-columns: 1fr $size__site-main-with-sidebar $size__site-sidebar 1fr;
+	grid-template-areas:
+			". header header ."
+			". main secondary .";
+	column-gap: 2.5rem;
+	justify-content: center;
+	margin: 0 auto;
+
+	@media only screen and (min-width: 701px) and (max-width: 1100px) {
+
+		grid-template-columns: 1fr $size__site-sidebar;
+		grid-template-areas:
+				"header header"
+				"main secondary";
+		max-width: $size__site-main-with-sidebar + $size__site-sidebar + 2.5rem
+	}
+
+	@media only screen and (max-width: 700px) {
+
+		grid-template-columns: 1fr;
+		grid-template-areas:
+				"header"
+				"main"
+				"secondary";
+	}
+}
+
+.site-header {
+	grid-area: header;
+	margin: 0 $site__side_margins;
+}
+
+.site-main {
+	grid-area: main;
+	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+	margin: 0 $site__side_margins;
+}
+
+.site-secondary {
+	grid-area: secondary;
+	margin: 0 $site__side_margins;
+
+	.footer-hr {
+		margin: 1.5rem 0;
+		background-color: $color__text_grey_5;
+		display: none;
+	}
+
+	@media only screen and (max-width: 700px) {
+
+		.site-sidebar {
+			display:none;
+		}
+
+		.footer-hr {
+			display: block;
+		}
+	}
+}

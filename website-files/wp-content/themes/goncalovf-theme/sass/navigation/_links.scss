@@ -1,0 +1,13 @@
+a {
+	color: $color__text-main;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

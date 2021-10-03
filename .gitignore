@@ -1,0 +1,17 @@
+# Docker
+docker-compose.yml
+
+# Uploads
+website-files/wp-content/uploads
+
+# Data used for posts
+website-files/wp-content/themes/goncalovf-theme/content/post-data
+
+# Other themes besides mine
+website-files/wp-content/themes/*
+!website-files/wp-content/themes/goncalovf-theme
+
+# Misc
+website-files/wp-config.php
+index.php
+.buildcomplete

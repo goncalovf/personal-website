@@ -1,0 +1,12 @@
+[13-Nov-2020 23:09:49 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home1/rl3b6ayr/goncalovf.com/wp-content/themes/goncalovf-theme/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home1/rl3b6ayr/goncalovf.com/wp-content/themes/goncalovf-theme/index.php on line 15
+[15-Nov-2020 22:16:33 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home1/rl3b6ayr/goncalovf.com/wp-content/themes/goncalovf-theme/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home1/rl3b6ayr/goncalovf.com/wp-content/themes/goncalovf-theme/index.php on line 15
+[13-Jan-2021 22:04:41 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home1/rl3b6ayr/goncalovf.com/wp-content/themes/goncalovf-theme/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home1/rl3b6ayr/goncalovf.com/wp-content/themes/goncalovf-theme/index.php on line 15

@@ -1,0 +1,80 @@
+@import "variables-site/colors";
+@import "variables-site/structure";
+
+@import "layout/content-sidebar";
+
+@import "content-pieces/tags";
+
+.site-main {
+
+    article {
+        margin-bottom: 3rem;
+
+        &:last-of-type {
+            margin-bottom:0;
+        }
+
+        .entry-header {
+
+            .entry-title {
+                display: inline-block;
+                margin: 0;
+                font-size: 1.35rem;
+
+                a:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .entry-footer {
+
+            .entry-meta, .entry-meta a {
+                color: $color__text_grey_10;
+                font-size: 0.9375rem;
+            }
+        }
+    }
+}
+
+.site-secondary {
+
+    h3 {
+        margin-top: 0;
+    }
+
+    hr {
+        margin: 1.5rem 0;
+        background-color: $color__text_grey_5;
+    }
+
+    article {
+        margin-bottom: 1rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .entry-title {
+            margin: 0;
+        }
+
+        .entry-meta {
+            color: #707070;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.site-footer {
+
+    p {
+        margin: 0;
+        font-size: 0.9375rem;
+        color: $color__text_grey_10;
+
+        a {
+            color: $color__text_grey_10;
+        }
+    }
+}

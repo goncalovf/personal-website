@@ -1,0 +1,56 @@
+@import "variables-site/colors";
+@import "variables-site/structure";
+
+@import "mixins/mixins-master";
+
+@import "navigation/footer";
+
+.site-header {
+    // Define: max-width;
+    margin: 0 auto;
+}
+
+.site-main {
+    // Define: max-width;
+    margin: 0 auto;
+
+    .entry-header {
+
+        .entry-title {
+            margin-bottom: 0;
+        }
+
+        .entry-meta {
+            font-size: 0.9125rem;
+        }
+    }
+
+    .entry-content {
+
+        a {
+            text-decoration: none;
+            color: $color__anchor;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .entry-footer {
+
+        p {
+            margin: 0;
+        }
+
+        .separator {
+            margin: 2.5rem 0 1.5rem;
+            text-align: center;
+
+            span {
+                padding: 0 0.5rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

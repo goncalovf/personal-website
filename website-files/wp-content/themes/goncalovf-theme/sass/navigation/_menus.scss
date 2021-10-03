@@ -1,0 +1,33 @@
+.site-header {
+
+	.site-header-container {
+		display: flex;
+		margin: 1.5rem 0 2.5rem;
+
+		.site-title {
+			margin: 0;
+			font-size: 1.35rem;
+			font-weight: bold;
+
+			a:hover {
+				text-decoration: none;
+			}
+		}
+
+		.header-separator {
+			margin: 0 0.5rem;
+			font-size: 1.35rem;
+		}
+
+		.archive-title {
+			margin: 0;
+			font-size: 1.35rem;
+		}
+
+		.archive-title {
+			margin: 0;
+			font-size: 1.35rem;
+			font-weight: normal;
+		}
+	}
+}

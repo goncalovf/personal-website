@@ -1,0 +1,25 @@
+/**
+ * Get base CSS
+ */
+@import "single";
+
+@import "layout/no-sidebar-single";
+
+/**
+ * Specific Imports
+ */
+@import "content-pieces/tags";
+
+/**
+ * Specific CSS
+ */
+.site-header {
+    max-width: $size__site-main-without-sidebar;
+}
+
+.site-main {}
+
+.adjacent-posts-wrapper {
+    max-width: $size__site-footer;
+    margin: 4rem auto 0;
+}

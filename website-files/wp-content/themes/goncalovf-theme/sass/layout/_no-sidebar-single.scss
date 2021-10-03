@@ -1,0 +1,47 @@
+.site {
+    display: grid;
+    grid-template-columns: 1fr $size__site-main-without-sidebar 1fr;
+    grid-template-areas:
+            ". header ."
+            ". main ."
+            "adjacent adjacent adjacent"
+            "pre-footer pre-footer pre-footer"
+            "footer footer footer ";
+    justify-content: center;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 750px) {
+
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+                "header header header"
+                "main main main"
+                "adjacent adjacent adjacent"
+                "pre-footer pre-footer pre-footer"
+                "footer footer footer";
+    }
+}
+
+.site-header {
+    grid-area: header;
+    margin: 0 $site__side_margins;
+}
+
+.site-main {
+    grid-area: main;
+    overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+    margin: 0 $site__side_margins;
+}
+
+.adjacent-posts {
+    grid-area: adjacent;
+    margin: 0 $site__side_margins;
+}
+
+.pre-footer {
+    grid-area: pre-footer;
+}
+
+.site-footer {
+    grid-area: footer;
+}

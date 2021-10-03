@@ -1,0 +1,322 @@
+/**
+ * Get base CSS
+ */
+.adjacent-posts .adjacent-posts-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.adjacent-posts .adjacent-posts-wrapper .cols {
+  display: flex;
+}
+.adjacent-posts .adjacent-posts-wrapper .cols.previous {
+  margin-left: -0.85rem;
+}
+.adjacent-posts .adjacent-posts-wrapper .cols.next {
+  flex-direction: row-reverse;
+  margin-right: -0.85rem;
+  text-align: right;
+}
+.adjacent-posts .adjacent-posts-wrapper .cols article .entry-title {
+  margin: 0;
+  font-weight: normal;
+}
+.adjacent-posts .adjacent-posts-wrapper .cols article .entry-meta {
+  font-size: 0.875rem;
+}
+.adjacent-posts .adjacent-posts-wrapper .cols .icon {
+  margin: 0 0.85rem;
+}
+.adjacent-posts .adjacent-posts-wrapper .cols .icon svg {
+  height: 0.7rem;
+  vertical-align: middle;
+}
+
+.pre-footer {
+  background-color: #FAFAFA;
+}
+.pre-footer .pre-footer-wrapper {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  max-width: 57rem;
+}
+.pre-footer .pre-footer-wrapper h3 {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #EBEBEB;
+}
+.pre-footer .pre-footer-wrapper .cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -1rem;
+  max-width: 100%;
+}
+.pre-footer .pre-footer-wrapper .cols .col {
+  margin: 0 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.pre-footer .pre-footer-wrapper .cols .col ul {
+  padding-left: 0;
+  list-style: none;
+}
+.pre-footer .pre-footer-wrapper .cols .col ul li {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.pre-footer .pre-footer-wrapper .cols .col ul li a {
+  white-space: nowrap;
+}
+
+.site-footer {
+  background-color: #191919;
+}
+.site-footer .footer-wrapper {
+  max-width: 57rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.site-footer .footer-wrapper .footer-message p {
+  margin: 0;
+  color: #D6D6D6;
+}
+.site-footer .footer-wrapper .footer-message p a {
+  color: #D6D6D6;
+}
+.site-footer .footer-wrapper .footer-site-title {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #D6D6D6;
+}
+.site-footer .footer-wrapper .footer-site-title .site-title {
+  margin: 0;
+}
+.site-footer .footer-wrapper .footer-site-title .site-title a {
+  color: #F0F0F0;
+}
+.site-footer .footer-wrapper .footer-site-title .site-title a:hover {
+  color: #FAFAFA;
+  text-decoration: none;
+}
+.site-footer .footer-wrapper .social-links {
+  margin-top: 1rem;
+}
+.site-footer .footer-wrapper .social-links a {
+  text-decoration: none;
+}
+.site-footer .footer-wrapper .social-links a .icon {
+  max-width: 1.415rem;
+}
+.site-footer .footer-wrapper .social-links a .icon.i-twitter .st0 {
+  fill: #F0F0F0;
+}
+.site-footer .footer-wrapper .social-links a .icon.i-twitter .st0:hover {
+  fill: #fff;
+}
+.site-footer .footer-wrapper .social-links a .icon.i-rss-feed path {
+  fill: #F0F0F0;
+}
+.site-footer .footer-wrapper .social-links a .icon.i-rss-feed path:hover {
+  fill: #fff;
+}
+
+.site-header {
+  margin: 0 auto;
+}
+
+.site-main {
+  margin: 0 auto;
+}
+.site-main .entry-header .entry-title {
+  margin-bottom: 0;
+}
+.site-main .entry-header .entry-meta {
+  font-size: 0.9125rem;
+}
+.site-main .entry-content h5 {
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
+.site-main .entry-content h6 {
+  font-size: 0.95rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+.site-main .entry-content a {
+  text-decoration: none;
+  color: #2681AB;
+}
+.site-main .entry-content a:hover {
+  text-decoration: underline;
+}
+.site-main .entry-content ul, .site-main .entry-content ol {
+  margin-left: 0;
+}
+.site-main .entry-content blockquote {
+  margin-bottom: 1.5rem;
+}
+.site-main .entry-content .wp-block-table table {
+  border-collapse: collapse;
+}
+.site-main .entry-content .wp-block-table table th, .site-main .entry-content .wp-block-table table td {
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+.site-main .entry-content .wp-block-table figcaption {
+  text-align: center;
+  margin-top: -1.5rem;
+  font-style: italic;
+}
+.site-main .entry-content .table-note {
+  font-size: 0.9rem;
+}
+.site-main .entry-content .reading-time {
+  margin-top: -1rem;
+  font-size: 0.9rem;
+}
+.site-main .entry-content .note {
+  padding: 1rem;
+  background-color: #FAFAFA;
+  border: 1px solid #F0F0F0;
+  border-radius: 3px;
+}
+.site-main .entry-content .note .note-title {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.site-main .entry-content .note div p:first-child {
+  margin-top: 0;
+}
+.site-main .entry-content .note div p:last-child, .site-main .entry-content .note div blockquote:last-child {
+  margin-bottom: 0;
+}
+.site-main .entry-footer p {
+  margin: 0;
+}
+.site-main .entry-footer .separator {
+  margin: 2.5rem 0 1.5rem;
+  text-align: center;
+}
+.site-main .entry-footer .separator span {
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.site {
+  display: grid;
+  grid-template-columns: 1fr 40rem 20rem 1fr;
+  grid-template-areas: ". header header ." ". main secondary ." "adjacent adjacent adjacent adjacent" "pre-footer pre-footer pre-footer pre-footer" "footer footer footer footer";
+  column-gap: 2.5rem;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 701px) and (max-width: 1100px) {
+  .site {
+    grid-template-columns: 1fr 6fr 6fr 1fr;
+    grid-template-areas: ". header header ." ". main main ." "adjacent adjacent adjacent adjacent" "pre-footer pre-footer pre-footer pre-footer" "footer footer footer footer";
+  }
+}
+@media only screen and (max-width: 700px) {
+  .site {
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-areas: "header header header header" "main main main main" "adjacent adjacent adjacent adjacent" "pre-footer pre-footer pre-footer pre-footer" "footer footer footer footer";
+  }
+}
+
+.site-header {
+  grid-area: header;
+  margin: 0 1rem;
+}
+
+.site-main {
+  grid-area: main;
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
+  margin: 0 1rem;
+}
+
+.site-secondary {
+  grid-area: secondary;
+  margin: 0 1rem;
+}
+@media only screen and (max-width: 1100px) {
+  .site-secondary {
+    display: none;
+  }
+}
+
+.adjacent-posts {
+  grid-area: adjacent;
+  margin: 0 1rem;
+}
+
+.pre-footer {
+  grid-area: pre-footer;
+}
+
+.site-footer {
+  grid-area: footer;
+}
+
+.no-sidebar .site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+/**
+ * Specific CSS
+ */
+.site-main {
+  margin-bottom: 3rem;
+}
+
+.site-secondary .index-container ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 1.5rem;
+}
+.site-secondary .index-container ul.index {
+  padding-left: 0;
+}
+.site-secondary .index-container ul.closed {
+  display: none;
+}
+.site-secondary .index-container ul li {
+  position: relative;
+  margin: 0.15rem 0;
+}
+.site-secondary .index-container ul li svg {
+  position: absolute;
+  top: 0.4rem;
+  left: -0.7rem;
+  width: 0.6rem;
+  padding: 0.1rem;
+}
+.site-secondary .index-container ul li svg.active {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.site-secondary .index-container ul li a:hover {
+  text-decoration: none;
+}
+.site-secondary .index-container ul li div {
+  padding: 0 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.site-secondary .index-container ul li div:hover, .site-secondary .index-container ul li div.active {
+  background-color: #F0F0F0;
+}
+
+.adjacent-posts {
+  margin: 2rem auto 0;
+}
+
+/*# sourceMappingURL=single-post-multi-page.css.map */

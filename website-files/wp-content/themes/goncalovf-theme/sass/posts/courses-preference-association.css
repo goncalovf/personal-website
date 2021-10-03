@@ -1,0 +1,36 @@
+/*
+ * Select2
+ */
+#menu .select2-container {
+    min-width: 600px;
+}
+
+
+/*
+ * Chart
+ */
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: #232F34;
+    border: 0px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    line-height: 1.75em;
+}
+
+div.tooltip a {
+    color: #FFFFFF;
+}
+
+
+/*
+ * Mobile
+ */
+@media only screen and (max-width: 600px) {
+    #menu .select2-container {
+        width: 100% !important
+    }
+}

@@ -1,0 +1,55 @@
+/*
+ * Select2
+ */
+ #menu .select2-container {
+    width: 100% !important;
+}
+
+.select2-selection__choice {
+    margin-left: 0 !important;
+}
+
+/*
+ * Chart
+ */
+
+.chart text {
+    fill: black;
+    font: 10px sans-serif;
+}
+
+.chart path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.chart .tick line {
+    stroke: #000000;
+}
+
+.chart .tick tspan {
+    padding-right: 10px;
+}
+
+.chart .dot {
+    stroke: #000;
+    stroke-opacity: .7;
+    fill-opacity: .7;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: #232F34;
+    border: 0px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    line-height: 1.75em;
+}
+
+div.tooltip a {
+    color: #FFFFFF;
+}

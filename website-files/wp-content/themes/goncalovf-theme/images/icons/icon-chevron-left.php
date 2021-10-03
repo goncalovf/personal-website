@@ -1,0 +1,1 @@
+<svg class="i-chevron-left <?php echo isset( $args['class'] ) ? $args['class'] : '' ?>" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.84 70.84"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:10.84px;}</style></defs><polyline class="cls-1" points="35.42 5.42 5.42 35.42 35.42 65.42"/></svg>

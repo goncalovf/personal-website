@@ -1,0 +1,714 @@
+[
+
+   {
+
+      "Page": "1",
+
+      "Heading": "Introduction",
+
+      "Children": [
+
+         {
+
+            "Page": "1",
+
+            "HeadingID": "we-wont-become-financial-experts",
+
+            "Heading": "We Won't Become Financial Experts"
+
+         }
+
+      ]
+
+   },
+
+   {
+
+      "Page": "2",
+
+      "Heading": "Two Different Savings Accounts For Two Different Time Horizons",
+
+      "Children": [
+
+         {
+
+            "Page": "2",
+
+            "HeadingID": "numbers-that-show-stock-market-for-long-term",
+
+            "Heading": "Numbers That Show That The Stock Market Rocks For The Long Term"
+
+         }
+
+      ]
+
+   },
+
+   {
+
+      "Page": "3",
+
+      "Heading": "Investing For The Long-term (Retirement)",
+
+      "Children": [
+
+         {
+
+            "Page": "3",
+
+            "HeadingID": "our-investment-approach",
+
+            "Heading": "Our Investment Approach"
+
+         },
+
+         {
+
+            "Page": "4",
+
+            "Heading": "How to Assess Investment Vehicles",
+
+            "Children": [
+
+               {
+
+                  "Page": "4",
+
+                  "HeadingID": "active-vs-passive-management",
+
+                  "Heading": "Active vs. Passive management"
+
+               },
+
+               {
+
+                  "Page": "4",
+
+                  "HeadingID": "asset-allocation-and-diversification",
+
+                  "Heading": "Asset Allocation and Diversification",
+
+                  "Children": [
+
+                     {
+
+                        "Page": "4",
+
+                        "HeadingID": "returns-and-risk",
+
+                        "Heading": "Returns and Risk"
+
+                     },
+
+                     {
+
+                        "Page": "4",
+
+                        "HeadingID": "asset-allocation",
+
+                        "Heading": "Asset Allocation",
+
+                        "Children": [
+
+                           {
+
+                              "Page": "4",
+
+                              "HeadingID": "swensen-model",
+
+                              "Heading": "The Swensen Model of Asset Allocation"
+
+                           },
+
+                           {
+
+                              "Page": "4",
+
+                              "HeadingID": "it-depends-on-your-age",
+
+                              "Heading": "It Depends on Your Age"
+
+                           }
+
+                        ]
+
+                     },
+
+                     {
+
+                        "Page": "4",
+
+                        "HeadingID": "diversification",
+
+                        "Heading": "Diversification"
+
+                     }
+
+                  ]
+
+               },
+
+               {
+
+                  "Page": "4",
+
+                  "HeadingID": "taxes",
+
+                  "Heading": "Taxes"
+
+               },
+
+               {
+
+                  "Page": "4",
+
+                  "HeadingID": "employer-benefits-savings",
+
+                  "Heading": "Employer Benefits for Long-Term Savings"
+
+               },
+
+               {
+
+                  "Page": "4",
+
+                  "HeadingID": "to-recap",
+
+                  "Heading": "To Recap"
+
+               }
+
+            ]
+
+         },
+
+         {
+
+            "Page": "5",
+
+            "Heading": "Investment Vehicles in Portugal",
+
+            "Children": [
+
+               {
+
+                  "Page": "5",
+
+                  "HeadingID": "ppr",
+
+                  "Heading": "Plano Poupança Reforma (PPR)",
+
+                  "Children": [
+
+                     {
+
+                        "Page": "5",
+
+                        "HeadingID": "tax-regime",
+
+                        "Heading": "Tax Regime"
+
+                     },
+
+                     {
+
+                        "Page": "5",
+
+                        "HeadingID": "active-management",
+
+                        "Heading": "Active Management"
+
+                     },
+
+                     {
+
+                        "Page": "5",
+
+                        "HeadingID": "employer-match-investments",
+
+                        "Heading": "Employer Match To Your Investments"
+
+                     }
+
+                  ]
+
+               },
+
+               {
+
+                  "Page": "5",
+
+                  "HeadingID": "investment-funds",
+
+                  "Heading": "Investment Funds"
+
+               },
+
+               {
+
+                  "Page": "5",
+
+                  "HeadingID": "etfs",
+
+                  "Heading": "ETFs"
+
+               },
+
+               {
+
+                  "Page": "5",
+
+                  "HeadingID": "summary-comparison",
+
+                  "Heading": "A Summary: Comparing PPR, Investment Funds and ETFs"
+
+               },
+
+               {
+
+                  "Page": "5",
+
+                  "HeadingID": "combining-etfs-with-ppr",
+
+                  "Heading": "How about combining ETFs with a PPR?"
+
+               }
+
+            ]
+
+         },
+
+         {
+
+            "Page": "6",
+
+            "Heading": "How to Invest in ETFs, Our Chosen Vehicle",
+
+            "Children": [
+
+               {
+
+                  "Page": "6",
+
+                  "HeadingID": "picking-the-index",
+
+                  "Heading": "Picking the Index",
+
+                  "Children": [
+
+                     {
+
+                        "Page": "6",
+
+                        "HeadingID": "exposure-to-ems",
+
+                        "Heading": "Exposure to Emerging Markets"
+
+                     },
+
+                     {
+
+                        "Page": "6",
+
+                        "HeadingID": "inflation-and-real-returns",
+
+                        "Heading": "Inflation and Real Returns"
+
+                     },
+
+                     {
+
+                        "Page": "6",
+
+                        "HeadingID": "currency-exchange-risk",
+
+                        "Heading": "Currency Exchange Risk",
+
+                        "Children": [
+
+                           {
+
+                              "Page": "6",
+
+                              "HeadingID": "the-problem",
+
+                              "Heading": "The Problem"
+
+                           },
+
+                           {
+
+                              "Page": "6",
+
+                              "HeadingID": "solution-a-tilting",
+
+                              "Heading": "Solution A: Tilting Towards Assets Denominated in Our Local Currency"
+
+                           },
+
+                           {
+
+                              "Page": "6",
+
+                              "HeadingID": "solution-b-currency-hedge",
+
+                              "Heading": "Solution B: Currency-Hedged ETFs"
+
+                           },
+
+                           {
+
+                              "Page": "6",
+
+                              "HeadingID": "ignoring-may-be-best",
+
+                              "Heading": "Why Ignoring the Currency Exchange Risk May Be the Best Solution",
+
+                              "Children": [
+
+                                 {
+
+                                    "Page": "6",
+
+                                    "HeadingID": "time-cancels-exchange-risk",
+
+                                    "Heading": "Time Cancels the Exchange-Rate Risk"
+
+                                 },
+
+                                 {
+
+                                    "Page": "6",
+
+                                    "HeadingID": "hedge-against-currency",
+
+                                    "Heading": "A Hedge Against Your Currency"
+
+                                 }
+
+                              ]
+
+                           },
+
+                           {
+
+                              "Page": "6",
+
+                              "HeadingID": "bottom-line",
+
+                              "Heading": "The Bottom Line"
+
+                           }
+
+                        ]
+
+                     },
+
+                     {
+
+                        "Page": "6",
+
+                        "HeadingID": "msci-world",
+
+                        "Heading": "MSCI World: The Index I Chose"
+
+                     },
+
+                     {
+
+                        "Page": "6",
+
+                        "HeadingID": "quick-note-on-ethics",
+
+                        "Heading": "A Quick Note About Ethics"
+
+                     }
+
+                  ]
+
+               },
+
+               {
+
+                  "Page": "7",
+
+                  "Heading": "Picking the ETF",
+
+                  "Children": [
+
+                     {
+
+                        "Page": "7",
+
+                        "HeadingID": "ter",
+
+                        "Heading": "Total Expense Ratio (TER)"
+
+                     },
+
+                     {
+
+                        "Page": "7",
+
+                        "HeadingID": "replication-method-tracking-error",
+
+                        "Heading": "Replication Method and Tracking Error"
+
+                     },
+
+                     {
+
+                        "Page": "7",
+
+                        "HeadingID": "dividend-distribution-policy",
+
+                        "Heading": "Dividend Distribution Policy"
+
+                     },
+
+                     {
+
+                        "Page": "7",
+
+                        "HeadingID": "liquidity",
+
+                        "Heading": "Liquidity"
+
+                     },
+
+                     {
+
+                        "Page": "7",
+
+                        "HeadingID": "exchange-market-broker-commissions",
+
+                        "Heading": "Exchange Market Where It Is Traded and Broker Commissions"
+
+                     },
+
+                     {
+
+                        "Page": "7",
+
+                        "HeadingID": "currency-hedge",
+
+                        "Heading": "Currency-Hedge"
+
+                     },
+
+                     {
+
+                        "Page": "7",
+
+                        "HeadingID": "ishares-core-msci-word-ucits",
+
+                        "Heading": "iShares Core MSCI World UCITS: The ETF I Chose"
+
+                     }
+
+                  ]
+
+               },
+
+               {
+
+                  "Page": "8",
+
+                  "Heading": "Picking the Broker",
+
+                  "Children": [
+
+                     {
+
+                        "Page": "8",
+
+                        "HeadingID": "country",
+
+                        "Heading": "Country"
+
+                     },
+
+                     {
+
+                        "Page": "8",
+
+                        "HeadingID": "safety",
+
+                        "Heading": "Safety"
+
+                     },
+
+                     {
+
+                        "Page": "8",
+
+                        "HeadingID": "product",
+
+                        "Heading": "Product",
+
+                        "Children": [
+
+                           {
+
+                              "Page": "8",
+
+                              "HeadingID": "criteria-to-assess-product",
+
+                              "Heading": "Criteria to Assess a Broker Product"
+
+                           },
+
+                           {
+
+                              "Page": "8",
+
+                              "HeadingID": "brokers-niche",
+
+                              "Heading": "Brokers’ Niche"
+
+                           },
+
+                           {
+
+                              "Page": "8",
+
+                              "HeadingID": "current-account-vs-platform",
+
+                              "Heading": "Trading Through Your Current Account Vs. a Trading Platform"
+
+                           }
+
+                        ]
+
+                     },
+
+                     {
+
+                        "Page": "8",
+
+                        "HeadingID": "price",
+
+                        "Heading": "Price"
+
+                     },
+
+                     {
+
+                        "Page": "8",
+
+                        "HeadingID": "big",
+
+                        "Heading": "BiG: The Broker I Chose"
+
+                     }
+
+                  ]
+
+               },
+
+               {
+
+                  "Page": "9",
+
+                  "Heading": "Starting to Invest",
+
+                  "Children": [
+
+                     {
+
+                        "Page": "9",
+
+                        "HeadingID": "dollar-cost-averaging",
+
+                        "Heading": "Dollar-Cost Averaging"
+
+                     },
+
+                     {
+
+                        "Page": "9",
+
+                        "HeadingID": "market-crashes",
+
+                        "Heading": "What To Do When the Market Crashes"
+
+                     }
+
+                  ]
+
+               }
+
+            ]
+
+         }
+
+      ]
+
+   },
+
+   {
+
+      "Page": "10",
+
+      "Heading": "Saving For The Short/Medium-term",
+
+      "Children": [
+
+         {
+
+            "Page": "10",
+
+            "HeadingID": "big-ticket-expenses",
+
+            "Heading": "Foreseeable Big-Ticket Expenses"
+
+         }
+
+      ]
+
+   },
+
+   {
+
+      "Page": "11",
+
+      "Heading": "Final Considerations",
+
+      "Children": [
+
+         {
+
+            "Page": "11",
+
+            "HeadingID": "conscious-spending",
+
+            "Heading": "Conscious Spending"
+
+         },
+
+         {
+
+            "Page": "11",
+
+            "HeadingID": "should-i-read-further",
+
+            "Heading": "I Read The Whole Guide. Am I Good or Should I Read Further?"
+
+         },
+
+         {
+
+            "Page": "11",
+
+            "HeadingID": "the-end",
+
+            "Heading": "The End"
+
+         }
+
+      ]
+
+   }
+
+]
+
