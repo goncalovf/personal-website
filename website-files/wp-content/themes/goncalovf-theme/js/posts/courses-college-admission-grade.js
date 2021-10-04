@@ -2,7 +2,7 @@ window.onload = function() {
 
     // Setup chart dimensions
     var margin = {top: 20, right: 30, bottom: 50, left: 60},
-        width = 960 - margin.left - margin.right,
+        width = 688 - margin.left - margin.right,
         height = 520 - margin.top - margin.bottom;
 
     var chart = d3.select(".chart")
@@ -154,8 +154,6 @@ window.onload = function() {
 
         chart.select('.title')
             .text("Média de ingresso por curso em cada instituição pública, 1ª fase, " + gradeToShowTitleText);
-
-        console.log(gradeToShow);
 
         redraw();
     }
