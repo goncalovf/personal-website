@@ -11,6 +11,9 @@ website-files/wp-content/themes/goncalovf-theme/content/post-data
 website-files/wp-content/themes/*
 !website-files/wp-content/themes/goncalovf-theme
 
+# VS Code
+.vscode
+
 # Misc
 website-files/wp-config.php
 index.php
