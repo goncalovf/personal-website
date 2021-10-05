@@ -143,7 +143,7 @@ add_action( 'widgets_init', 'gvf_widgets_init' );
  * Enqueue scripts and styles.
  */
 function gvf_scripts() {
-	wp_enqueue_style( 'gvf-style', get_stylesheet_uri(), array(), '1.2.2' );
+	wp_enqueue_style( 'gvf-style', get_stylesheet_uri(), array(), '1.2.3' );
 	wp_style_add_data( 'gvf-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'gvf-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
