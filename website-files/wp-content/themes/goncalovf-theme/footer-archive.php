@@ -4,6 +4,7 @@
         <p><?php _e( "Reach me at", 'gvf' ) ?> <a href="mailto:<?php echo get_bloginfo( 'admin_email' ) ?>"><?php echo get_bloginfo( 'admin_email' ) ?></a></p>
         <div class="social-links">
             <a class="social-link" href="https://twitter.com/goncalovf"><?php gvf_print_icon( 'social-twitter' ) ?></a>
+            <a class="social-link" href="https://github.com/goncalovf"><?php gvf_print_icon( 'social-github' ) ?></a>
             <a class="social-link" href="https://www.linkedin.com/in/goncalovf/"><?php gvf_print_icon( 'social-linkedin' ) ?></a>
             <a class="social-link" href="https://www.behance.net/goncalovf"><?php gvf_print_icon( 'social-behance' ) ?></a>
             <a class="social-link" href="<?php bloginfo('rss2_url') ?>"><?php gvf_print_icon( 'rss-feed' ) ?></a>
