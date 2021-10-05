@@ -3,12 +3,15 @@
   font-size: 13px;
   color: #191e23;
 }
+
 .edit-post-meta-boxes-area #poststuff .field-row {
   margin-top: 20px;
 }
+
 .edit-post-meta-boxes-area #poststuff .field-row:first-of-type {
   margin-top: 0;
 }
+
 .edit-post-meta-boxes-area #poststuff .field-row .checkbox-input-container {
   width: 16px;
   height: 16px;
@@ -17,18 +20,23 @@
   margin-right: 12px;
   vertical-align: middle;
 }
+
 .edit-post-meta-boxes-area #poststuff .field-row .checkbox-input-container input.checkbox-input {
   border: 2px solid #6c7781;
   border-radius: 2px;
 }
+
 .edit-post-meta-boxes-area #poststuff .field-row .checkbox-input-container input.checkbox-input:checked {
   background: #11a0d2;
   border-color: #11a0d2;
 }
+
 .edit-post-meta-boxes-area #poststuff .field-row .checkbox-input-container input.checkbox-input:focus {
   border: none;
-  box-shadow: 0 0 0 2px #555d66;
+  -webkit-box-shadow: 0 0 0 2px #555d66;
+          box-shadow: 0 0 0 2px #555d66;
 }
+
 .edit-post-meta-boxes-area #poststuff .field-row .checkbox-input-container svg.checkbox-checked {
   width: 21px;
   height: 21px;
@@ -39,35 +47,48 @@
   top: -2px;
   -webkit-user-select: "none";
   -ms-user-select: "none";
-  user-select: "none";
+  -moz-user-select: "none";
+       user-select: "none";
   pointer-events: none;
 }
+
 .edit-post-meta-boxes-area #poststuff .field-row .select-input-container .select2 {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
 }
+
 .edit-post-meta-boxes-area #poststuff .field-row .list-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0.5rem 0;
   cursor: move;
   border-bottom: 1px solid #eee;
 }
+
 .edit-post-meta-boxes-area #poststuff .field-row .list-item-container .title {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   margin: 0;
 }
+
 .edit-post-meta-boxes-area #poststuff .field-row .list-item-container .part-id {
   margin: 0 0 0 0.5rem;
 }
+
 .edit-post-meta-boxes-area #poststuff .field-row._index_field {
   display: none;
 }
+
 .edit-post-meta-boxes-area #poststuff .field-row._index_field.active {
   display: block;
 }
-
 /*# sourceMappingURL=edit-post.css.map */

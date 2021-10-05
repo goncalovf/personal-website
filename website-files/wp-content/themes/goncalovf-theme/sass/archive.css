@@ -1,31 +1,45 @@
 .site {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 40rem 20rem 1fr;
-  grid-template-areas: ". header header ." ". main secondary .";
-  column-gap: 2.5rem;
-  justify-content: center;
+  -ms-grid-columns: 1fr 40rem 20rem 1fr;
+      grid-template-columns: 1fr 40rem 20rem 1fr;
+      grid-template-areas: ". header header ." ". main secondary .";
+  -webkit-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
 }
+
 @media only screen and (min-width: 701px) and (max-width: 1100px) {
   .site {
-    grid-template-columns: 1fr 20rem;
-    grid-template-areas: "header header" "main secondary";
+    -ms-grid-columns: 1fr 20rem;
+        grid-template-columns: 1fr 20rem;
+        grid-template-areas: "header header" "main secondary";
     max-width: 62.5rem;
   }
 }
+
 @media only screen and (max-width: 700px) {
   .site {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "secondary";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "main" "secondary";
   }
 }
 
 .site-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: header;
   margin: 0 1rem;
 }
 
 .site-main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: main;
   overflow: hidden;
   /* Resolves issue with <pre> elements forcing full width. */
@@ -33,14 +47,18 @@
 }
 
 .site-secondary {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: secondary;
   margin: 0 1rem;
 }
+
 .site-secondary .footer-hr {
   margin: 1.5rem 0;
   background-color: #D6D6D6;
   display: none;
 }
+
 @media only screen and (max-width: 700px) {
   .site-secondary .site-sidebar {
     display: none;
@@ -53,6 +71,7 @@
 .tags {
   margin: 0 -0.35rem;
 }
+
 .tags .tag {
   margin: 0 0.35rem;
   font-size: 0.825rem;
@@ -60,12 +79,15 @@
   border-radius: 3px;
   background-color: #F0F0F0;
 }
+
 .tags .tag a {
   padding: 0.125rem 0.25rem;
 }
+
 .tags .tag:hover {
   background-color: #EBEBEB;
 }
+
 .tags .tag:hover a {
   text-decoration: none;
 }
@@ -73,17 +95,21 @@
 .site-main article {
   margin-bottom: 3rem;
 }
+
 .site-main article:last-of-type {
   margin-bottom: 0;
 }
+
 .site-main article .entry-header .entry-title {
   display: inline-block;
   margin: 0;
   font-size: 1.35rem;
 }
+
 .site-main article .entry-header .entry-title a:hover {
   text-decoration: none;
 }
+
 .site-main article .entry-footer .entry-meta, .site-main article .entry-footer .entry-meta a {
   color: #707070;
   font-size: 0.9375rem;
@@ -92,19 +118,24 @@
 .site-secondary h3 {
   margin-top: 0;
 }
+
 .site-secondary hr {
   margin: 1.5rem 0;
   background-color: #D6D6D6;
 }
+
 .site-secondary article {
   margin-bottom: 1rem;
 }
+
 .site-secondary article:last-of-type {
   margin-bottom: 0;
 }
+
 .site-secondary article .entry-title {
   margin: 0;
 }
+
 .site-secondary article .entry-meta {
   color: #707070;
   font-size: 0.9rem;
@@ -115,32 +146,20 @@
   font-size: 0.9375rem;
   color: #707070;
 }
+
 .site-footer p a {
   color: #707070;
 }
+
 .site-footer .social-links {
   margin-top: 1rem;
 }
-.site-footer .social-links a {
-  text-decoration: none;
-}
-.site-footer .social-links a .icon {
-  max-width: 1.415rem;
-}
-.site-footer .social-links a .icon.i-twitter .st0 {
-  fill: #191919;
-}
-.site-footer .social-links a .icon.i-twitter .st0:hover {
-  fill: black;
-}
-.site-footer .social-links a .icon.i-twitter .st1 {
-  fill: #fff;
-}
-.site-footer .social-links a .icon.i-rss-feed path {
-  fill: #191919;
-}
-.site-footer .social-links a .icon.i-rss-feed path:hover {
-  fill: black;
+
+.site-footer .social-links svg {
+  max-width: 1.2rem;
 }
 
+.site-footer .social-links svg:hover {
+  color: black;
+}
 /*# sourceMappingURL=archive.css.map */

@@ -77,4 +77,16 @@
             color: $color__text_grey_10;
         }
     }
+
+    .social-links {
+        margin-top: 1rem;
+
+        svg {
+            max-width: 1.2rem;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
 }
