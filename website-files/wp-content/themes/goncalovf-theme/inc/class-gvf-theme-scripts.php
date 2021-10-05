@@ -97,19 +97,19 @@ class GVF_Theme_Scripts extends GVF_Scripts {
             'archive-css'           => array(
                 'src'     => $this->get_asset_url('sass/archive.css' ),
                 'deps'    => array(),
-                'version' => '1.2',
+                'version' => '1.3',
                 'has_rtl' => false
             ),
             'single-post-simple'    => array(
                 'src'     => $this->get_asset_url('sass/single-post-simple.css' ),
                 'deps'    => array(),
-                'version' => '1.3.1',
+                'version' => '1.4.1',
                 'has_rtl' => false
             ),
             'single-post-multi-page' => array(
                 'src'     => $this->get_asset_url('sass/single-post-multi-page.css' ),
                 'deps'    => array(),
-                'version' => '1.3.1',
+                'version' => '1.4.1',
                 'has_rtl' => false
             ),
             'post-courses-college-admission-grade' => array(
