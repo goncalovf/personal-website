@@ -1,6 +1,5 @@
 .select2-container {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: inline-block;
   margin: 0;
   position: relative;
@@ -8,15 +7,12 @@
 }
 
 .select2-container .select2-selection--single {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   cursor: pointer;
   display: block;
   height: 28px;
   margin: 0 0 -4px;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
 }
 
@@ -39,14 +35,11 @@
 }
 
 .select2-container .select2-selection--multiple {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   cursor: pointer;
   display: block;
   min-height: 32px;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
 }
 
@@ -64,8 +57,7 @@
 }
 
 .select2-container .select2-search--inline .select2-search__field {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: none;
   font-size: 100%;
   margin: 0;
@@ -80,8 +72,7 @@
   background-color: white;
   border: 1px solid #aaa;
   border-radius: 4px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: block;
   position: absolute;
   left: -100000px;
@@ -101,9 +92,7 @@
 
 .select2-results__option {
   padding: 6px;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  user-select: none;
   -webkit-user-select: none;
 }
 
@@ -136,8 +125,7 @@
 .select2-search--dropdown .select2-search__field {
   padding: 4px;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .select2-search--dropdown .select2-search__field::-webkit-search-cancel-button {
@@ -250,8 +238,7 @@
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__rendered {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   list-style: none;
   margin: 0;
   padding: 0 5px;
@@ -355,8 +342,7 @@
   background: transparent;
   border: none;
   outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   -webkit-appearance: textfield;
 }
 
@@ -428,7 +414,6 @@
   border: 1px solid #aaa;
   border-radius: 4px;
   outline: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), to(#eeeeee));
   background-image: linear-gradient(to bottom, white 50%, #eeeeee 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
@@ -465,7 +450,6 @@
   top: 1px;
   right: 1px;
   width: 20px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #eeeeee), to(#cccccc));
   background-image: linear-gradient(to bottom, #eeeeee 50%, #cccccc 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFCCCCCC', GradientType=0);
@@ -516,7 +500,6 @@
   border-top: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(50%, #eeeeee));
   background-image: linear-gradient(to bottom, white 0%, #eeeeee 50%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFEEEEEE', GradientType=0);
@@ -526,7 +509,6 @@
   border-bottom: none;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #eeeeee), to(white));
   background-image: linear-gradient(to bottom, #eeeeee 50%, white 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEEEEEE', endColorstr='#FFFFFFFF', GradientType=0);
@@ -614,8 +596,7 @@
 
 .select2-container--classic .select2-search--inline .select2-search__field {
   outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .select2-container--classic .select2-dropdown {

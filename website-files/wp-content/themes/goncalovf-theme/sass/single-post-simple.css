@@ -2,17 +2,11 @@
  * Get base CSS
  */
 .adjacent-posts .adjacent-posts-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .adjacent-posts .adjacent-posts-wrapper .cols {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -21,10 +15,7 @@
 }
 
 .adjacent-posts .adjacent-posts-wrapper .cols.next {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
   margin-right: -0.85rem;
   text-align: right;
 }
@@ -64,18 +55,13 @@
 }
 
 .pre-footer .pre-footer-wrapper .cols {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0 -1rem;
 }
 
 .pre-footer .pre-footer-wrapper .cols .col {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  flex: 1 1 auto;
   margin: 0 1rem;
 }
 
@@ -175,35 +161,26 @@
 }
 
 .site {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 45rem 1fr;
-      grid-template-columns: 1fr 45rem 1fr;
-      grid-template-areas: ". header ." ". main ." "adjacent adjacent adjacent" "pre-footer pre-footer pre-footer" "footer footer footer ";
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: 1fr 45rem 1fr;
+  grid-template-areas: ". header ." ". main ." "adjacent adjacent adjacent" "pre-footer pre-footer pre-footer" "footer footer footer ";
+  justify-content: center;
   margin: 0 auto;
 }
 
 @media only screen and (max-width: 750px) {
   .site {
-    -ms-grid-columns: 1fr 4fr 1fr;
-        grid-template-columns: 1fr 4fr 1fr;
-        grid-template-areas: "header header header" "main main main" "adjacent adjacent adjacent" "pre-footer pre-footer pre-footer" "footer footer footer";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "header header header" "main main main" "adjacent adjacent adjacent" "pre-footer pre-footer pre-footer" "footer footer footer";
   }
 }
 
 .site-header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: header;
   margin: 0 1rem;
 }
 
 .site-main {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: main;
   overflow: hidden;
   /* Resolves issue with <pre> elements forcing full width. */
@@ -211,24 +188,15 @@
 }
 
 .adjacent-posts {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: adjacent;
   margin: 0 1rem;
 }
 
 .pre-footer {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: pre-footer;
 }
 
 .site-footer {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: footer;
 }
 
