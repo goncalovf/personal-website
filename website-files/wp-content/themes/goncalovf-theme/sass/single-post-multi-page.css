@@ -228,6 +228,178 @@
 /**
  * Specific CSS
  */
+.site-header-container {
+  position: relative;
+}
+
+.site-header-container .h-menu-container {
+  position: absolute;
+  top: 0.2625rem;
+  right: 0;
+}
+
+@media only screen and (min-width: 1101px) {
+  .site-header-container .h-menu-container {
+    display: none;
+  }
+}
+
+.site-header-container .h-menu-container .h-menu {
+  height: 1.5rem;
+}
+
+.nav-drill {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 0 3rem 1.25rem;
+  background-color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  transition: 0.45s;
+  font-size: 0.95rem;
+  transform: translateX(100%);
+}
+
+.nav-drill .nav-close {
+  margin-bottom: 1.5rem;
+}
+
+.nav-drill .nav-close .i-close {
+  width: 1rem;
+}
+
+.nav-drill .nav-close .i-close .line {
+  fill: #000;
+}
+
+.nav-drill .nav-section {
+  max-width: 35rem;
+}
+
+.nav-drill .nav-site-title {
+  margin-top: 4rem;
+  font-size: 0.975rem;
+  font-weight: bold;
+}
+
+.nav-drill ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.nav-items.nav-items-first {
+  position: relative;
+}
+
+.nav-items .nav-item {
+  display: flex;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+.nav-items .nav-item:first-of-type {
+  border-top: solid 1px #f0f0f0;
+}
+
+.nav-items .nav-item.nav-expand {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-items .nav-item .nav-link-final {
+  flex: 1 0;
+  padding: 0.65rem 0;
+}
+
+.nav-items .nav-item .nav-link-final:hover {
+  text-decoration: none;
+  background-color: #f0f0f0;
+}
+
+.nav-items .nav-item .nav-expand-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  background-color: #fff;
+  transition: 0.3s;
+  visibility: hidden;
+}
+
+.nav-items .nav-item .nav-expand-content .nav-back {
+  background-color: #ebebeb;
+}
+
+.nav-items .nav-item .nav-expand-content .nav-back .nav-back-link {
+  display: flex;
+  flex: 1 0;
+}
+
+.nav-items .nav-item .nav-expand-content .nav-back .nav-back-link .nav-back-link-icon-container {
+  flex: 0 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-items .nav-item .nav-expand-content .nav-back .nav-back-link .nav-back-link-icon-container .i-chevron-left {
+  width: 0.5rem;
+}
+
+.nav-items .nav-item .nav-expand-content .nav-back .nav-back-text-container {
+  padding: 0.5rem 0;
+  flex: 1 0;
+}
+
+.nav-items .nav-item .nav-expand-link {
+  flex: 0 0 2.65rem;
+}
+
+.nav-items .nav-item .nav-expand-link .nav-expand-link-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #ebebeb;
+}
+
+.nav-items .nav-item .nav-expand-link .nav-expand-link-icon-container:hover {
+  background-color: #d6d6d6;
+}
+
+.nav-items .nav-item .nav-expand-link .nav-expand-link-icon-container .i-chevron-right {
+  width: 0.5rem;
+}
+
+.nav-items .nav-item.nav-expand.active > .nav-expand-content {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+/**
+   * This class is applied to the <body> element.
+   * Triggers the effects:
+   * - Dark background appear.
+   * - Nav appear.
+   */
+.nav-is-toggled #nav-background {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-is-toggled .nav-drill {
+  transform: translateX(0);
+}
+
 .site-main {
   margin-bottom: 3rem;
 }
