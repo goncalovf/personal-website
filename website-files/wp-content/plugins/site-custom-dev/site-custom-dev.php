@@ -12,13 +12,13 @@ if ( ! defined( 'GVF_PLUGIN_FILE' ) ) {
     define( 'GVF_PLUGIN_FILE', __FILE__ );
 }
 
-// Include the main WooCommerce class.
+// Include the main plugin class.
 if ( ! class_exists( 'GVF', false ) ) {
     include_once dirname( GVF_PLUGIN_FILE ) . '/inc/class-gvf.php';
 }
 
 /**
- * Returns the main instance of WC.
+ * Returns the main instance of GVF.
  *
  * @since  2.1
  * @return GVF
