@@ -157,6 +157,8 @@ class GVF_Structured_Data {
         $markup_person   = $this->get_admin_data();
         $markup_language = $this->get_language_data();
 
+        $tags = get_the_tags( $post->get_id() );
+
         $markup_post = array(
             '@type'             => 'BlogPosting',
             '@id'               => $post_permalink,
@@ -169,7 +171,7 @@ class GVF_Structured_Data {
             'datePublished'     => date( 'Y-m-d', $post->get_date_created()->getTimestamp() ),
             'dateModified'      => date( 'Y-m-d', $post->get_date_modified()->getTimestamp() ),
             'articleSection'    => array_column( get_the_category( $post->get_id() ), 'name' ),
-            'keywords'          => array_column( get_the_tags( $post->get_id() ), 'name' ),
+            'keywords'          => ! empty( $tags ) ? array_column( $tags, 'name' ) : array(),
             'abstract'          => wp_strip_all_tags( get_the_excerpt() ),
             // articleBody set afterwards.
         );

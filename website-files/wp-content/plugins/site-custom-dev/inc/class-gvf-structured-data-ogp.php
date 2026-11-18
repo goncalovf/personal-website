@@ -61,9 +61,12 @@ class GVF_Structured_Data_OGP {
         /**
          * Print array metas (tags).
          */
-        foreach ( array_column( get_the_tags( $post->get_id() ), 'name' ) as $tag_name ) : ?>
-            <meta property="tag" content="<?php echo $tag_name ?>" />
-        <?php endforeach;
+        $tags = get_the_tags( $post->get_id() );
+        if ( $tags ) :
+            foreach ( $tags as $tag ) : ?>
+                <meta property="tag" content="<?php echo $tag->name ?>" />
+            <?php endforeach;
+        endif;
     }
 
     /**
