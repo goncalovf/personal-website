@@ -1,0 +1,9 @@
+{
+    "name": "goncalovf.com",
+    "scripts": {
+        "cli": "docker-compose exec --user=www-data --workdir=/var/www/html wordpress",
+        "start": "docker-compose up --detach",
+        "stop": "docker-compose stop",
+        "exec": "sh -c 'user=\"${1:-www-data}\"; docker-compose exec -it --user=${user} --workdir=/var/www/html wordpress bash' --"
+    }
+}

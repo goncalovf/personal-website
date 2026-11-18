@@ -18,3 +18,9 @@ website-files/wp-content/themes/*
 website-files/wp-config.php
 index.php
 .buildcomplete
+# Local environment
+/.env
+/certs
+/vendor
+debug.log
+*.sql

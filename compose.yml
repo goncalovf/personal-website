@@ -1,0 +1,79 @@
+name: goncalovf.com
+services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy:1.6
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - certs:/etc/nginx/certs
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+  db:
+    image: mariadb:11.4
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./docker/db/conf.d:/etc/mysql/conf.d
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: goncalovf
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - '8080:80'
+    environment:
+      PMA_HOST: db
+      VIRTUAL_HOST: phpmyadmin.${DEV_URL:-goncalovf.local}
+      VIRTUAL_PORT: 80
+
+  mailhog:
+    image: mailhog/mailhog:v1.0.1
+    ports:
+      - '8025:8025'
+    environment:
+      VIRTUAL_HOST: mail.${DEV_URL:-goncalovf.local}
+      VIRTUAL_PORT: 8025
+
+  mkcert:
+    build: ./docker/mkcert
+    volumes:
+      - certs:/root/.local/share/mkcert
+    command: >
+      sh -c "mkcert -cert-file '${DEV_URL:-goncalovf.local}.crt' -key-file '${DEV_URL:-goncalovf.local}.key' '${DEV_URL:-goncalovf.local}' '*.${DEV_URL:-goncalovf.local}'"
+
+  wordpress:
+    build: ./docker/wp
+    depends_on:
+      - db
+    restart: on-failure
+    volumes:
+      - ./docker/wp/volume.d:/var/www/html/volume.d/
+      - ./website-files/wp-content/themes/goncalovf-theme:/var/www/html/wp-content/themes/goncalovf-theme
+      - ./website-files/wp-content/plugins/site-custom-dev:/var/www/html/wp-content/plugins/site-custom-dev
+      - ./website-files/wp-content/plugins/redirection:/var/www/html/wp-content/plugins/redirection
+      - ./website-files/wp-content/uploads:/var/www/html/wp-content/uploads
+      - ./website-files/wp-content/languages:/var/www/html/wp-content/languages
+      - ./debug.log:/var/www/html/wp-content/debug.log
+      - ./docker/wp/config/goncalovf.php:/var/www/html/extra-config.php
+    environment:
+      # For wordpress image
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: goncalovf
+      WORDPRESS_TABLE_PREFIX: wp_
+      WORDPRESS_DEBUG: 'true'
+      WORDPRESS_CONFIG_EXTRA: "include( 'extra-config.php' );"
+      # For nginx-proxy image
+      VIRTUAL_HOST: ${DEV_URL:-goncalovf.local}
+      # Our own environment variables
+      XDEBUG_CLIENT_HOST: ${XDEBUG_CLIENT_HOST:-host.docker.internal}
+      XDEBUG_CLIENT_PORT: 9003
+
+volumes:
+  db_data:
+  certs:
