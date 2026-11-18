@@ -146,6 +146,14 @@
   text-decoration: underline;
 }
 
+.site-main .entry-content .wp-block-button__link {
+  color: #fff;
+}
+
+.site-main .entry-content .wp-block-button__link:hover {
+  text-decoration: none;
+}
+
 .site-main .entry-footer p {
   margin: 0;
 }

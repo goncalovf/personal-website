@@ -35,6 +35,14 @@
                 text-decoration: underline;
             }
         }
+
+        .wp-block-button__link {
+            color: $color__background-body;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
 
     .entry-footer {
