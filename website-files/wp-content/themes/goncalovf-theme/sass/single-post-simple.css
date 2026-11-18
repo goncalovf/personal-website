@@ -184,7 +184,7 @@
   grid-area: main;
   overflow: hidden;
   /* Resolves issue with <pre> elements forcing full width. */
-  margin: 0 1rem;
+  margin: 0 1rem 3em;
 }
 
 .adjacent-posts {

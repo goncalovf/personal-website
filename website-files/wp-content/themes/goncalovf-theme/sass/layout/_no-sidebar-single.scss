@@ -30,7 +30,7 @@
 .site-main {
     grid-area: main;
     overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-    margin: 0 $site__side_margins;
+    margin: 0 $site__side_margins 3em;
 }
 
 .adjacent-posts {
