@@ -142,28 +142,27 @@ class GVF_Theme_Scripts extends GVF_Scripts {
         $this->enqueue_script( 'nav' );
 
         if ( is_front_page() || is_archive() || is_404() ) {
-            $this->enqueue_style('archive-css' );
+            $this->enqueue_style( 'archive-css' );
 
         } elseif ( is_singular( 'post' ) ) {
-
             if ( gvf_is_multi_page_post_with_index( get_the_ID() ) ) {
 
-                $this->enqueue_style('single-post-multi-page' );
-                $this->enqueue_script('single-post-multi-page' );
+                $this->enqueue_style( 'single-post-multi-page' );
+                $this->enqueue_script( 'single-post-multi-page' );
             } else {
-                $this->enqueue_style('single-post-simple' );
+                $this->enqueue_style( 'single-post-simple' );
             }
         } 
         
         if ( is_single( 57 ) ) {
-            $this->enqueue_style('post-courses-college-admission-grade' );
-            $this->enqueue_script('post-courses-college-admission-grade' );
-            $this->enqueue_script('d3-v3' );
+            $this->enqueue_style( 'post-courses-college-admission-grade' );
+            $this->enqueue_script( 'post-courses-college-admission-grade' );
+            $this->enqueue_script( 'd3-v3' );
         }
         if ( is_single( 62 ) ) {
-            $this->enqueue_style('post-courses-preference-association' );
-            $this->enqueue_script('post-courses-preference-association' );
-            $this->enqueue_script('d3-v5' );
+            $this->enqueue_style( 'post-courses-preference-association' );
+            $this->enqueue_script( 'post-courses-preference-association' );
+            $this->enqueue_script( 'd3-v5' );
         }
     }
 
