@@ -1,0 +1,43 @@
+---
+// Nested index of the multi-page guide. Port of gvf_print_index() from the old site-custom-dev plugin:
+// a branch is expanded when it, or any of its descendants, is on the current page.
+export interface IndexItem {
+	Page: string;
+	Heading: string;
+	HeadingID?: string;
+	Children?: IndexItem[];
+}
+
+interface Props {
+	items: IndexItem[];
+	base: string;
+	page: number;
+}
+
+const { items, base, page } = Astro.props;
+
+const isOpen = ( item: IndexItem ): boolean =>
+	Number( item.Page ) === page || ( item.Children ?? [] ).some( isOpen );
+
+const href = ( item: IndexItem ) =>
+	( Number( item.Page ) === 1 ? base : `${ base }${ item.Page }/` ) + ( item.HeadingID ? `#${ item.HeadingID }` : '' );
+
+const isCurrent = ( item: IndexItem ) => Number( item.Page ) === page && !item.HeadingID;
+---
+
+<ul>
+	{ items.map( ( item ) => (
+		<li>
+			{ item.Children ? (
+				<details open={ isOpen( item ) }>
+					<summary>
+						<a href={ href( item ) } aria-current={ isCurrent( item ) ? 'page' : undefined }>{ item.Heading }</a>
+					</summary>
+					<Astro.self items={ item.Children } base={ base } page={ page } />
+				</details>
+			) : (
+				<a href={ href( item ) } aria-current={ isCurrent( item ) ? 'page' : undefined }>{ item.Heading }</a>
+			) }
+		</li>
+	) ) }
+</ul>
