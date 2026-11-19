@@ -1,0 +1,29 @@
+---
+title: "Visualization of admission-grades to college courses"
+description: "Visualization of admission-grades to college courses in Portugal, 2017"
+date: "2018-09-15T18:11:00"
+updated: "2021-10-20T20:40:35"
+tags: ["Data Analysis", "Data Visualization"]
+pinned: false
+readingTime: 1
+---
+
+import AdmissionGrades from '../../components/viz/AdmissionGrades.astro';
+
+To promote omeututor.com – a marketplace for 100% online tutoring [I founded in 2018](/omeututor-a-reflection/) – I created a blog, which included 2 posts with visualizations about college admissions. This is the first post.
+
+In this post, I wanted to help students view the minimum admission grade for different colleges for any particular course.
+
+To use the graph:
+
+1. Select the courses you want to include.
+2. Select whether you want the previous year's admission grade (2017) or the average of the previous 3 years (2015-2017).
+3. Place the cursor on top of a grade (circle) to read the information about the college..
+
+<AdmissionGrades />
+
+Note: only grades for public institutions are included.
+
+The graph is in Portuguese because the business I was promoting was focused on the Portuguese market.
+
+See the [code for this graph](https://github.com/goncalovf/personal-website/blob/4349f60f5120c73296e15abb68616de9cd698969/website-files/wp-content/themes/goncalovf-theme/js/posts/courses-college-admission-grade.js).

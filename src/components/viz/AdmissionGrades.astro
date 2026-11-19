@@ -1,0 +1,35 @@
+---
+// Interactive chart from 2018, kept as-is: jQuery + Select2 for the course picker, D3 v3 for the chart.
+// The script fetches its CSV from the old theme path, which public/ still serves.
+import VizScripts from './VizScripts.astro';
+---
+
+<div class="viz">
+	<p id="menu">
+		Curso:
+		<select multiple="multiple" name="course"></select>
+		<br />
+		Nota de ingresso a exibir:
+		<select name="grade">
+			<option value="Admission_grade_2017">De 2017</option>
+			<option value="Admission_grade_avg">Média entre 2017-2015</option>
+		</select>
+	</p>
+	<svg class="chart"></svg>
+</div>
+
+<VizScripts d3="https://cdn.jsdelivr.net/npm/d3@3.5.17/d3.min.js" script="/viz/courses-college-admission-grade.js" />
+
+<style is:global>
+	#menu .select2-container {
+		width: 100% !important;
+	}
+	.select2-selection__choice {
+		margin-left: 0 !important;
+	}
+	.chart .dot {
+		stroke: #000;
+		stroke-opacity: 0.7;
+		fill-opacity: 0.7;
+	}
+</style>

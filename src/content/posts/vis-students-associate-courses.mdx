@@ -1,0 +1,25 @@
+---
+title: "Visualization on how students associate courses when applying to colleges"
+description: "Visualization on how students in Portugal associate courses when applying to colleges (2017)"
+date: "2018-09-20T19:38:00"
+updated: "2021-10-20T20:41:00"
+tags: ["Data Analysis", "Data Visualization"]
+pinned: false
+readingTime: 1
+---
+
+import CoursePreferences from '../../components/viz/CoursePreferences.astro';
+
+To promote omeututor.com – a marketplace for 100% online tutoring [I founded in 2018](/omeututor-a-reflection/) – I created a blog, which included 2 posts with visualizations about college admissions. This is the second post.
+
+In Portugal, when students apply to colleges, they fill in a list of preferred courses and colleges they would like to be enrolled in, in order of preference. For this post, I got each students' list of preferences for 2017 and quantified how many times each pair of courses were included in the lists. This calculation weighted how close the preferences are to each other. For example, a student's first and second preferences have a stronger association than the student's first and fourth preferences.
+
+My goal with this post was to help students discover alternative courses to their preferred ones, which is important because many students can't get into their preferred course because they didn't get the required admission grade. Hopefully, knowing how others build their list of preferences could help a student build his own.
+
+In the visualization, the bigger the circle, the more the course is associated with the one selected in the select-box.
+
+<CoursePreferences />
+
+The graph is in Portuguese because the business I was promoting was focused on the Portuguese market.
+
+See the [code for this graph](https://github.com/goncalovf/personal-website/blob/4349f60f5120c73296e15abb68616de9cd698969/website-files/wp-content/themes/goncalovf-theme/js/posts/courses-preference-association.js).
