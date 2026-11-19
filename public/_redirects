@@ -1,0 +1,39 @@
+# Cloudflare Pages redirects. Rules match paths literally, so short links list both slash variants.
+
+# Short links (from the WordPress Redirection plugin, same status codes)
+/muiengineeringlevels   https://docs.google.com/spreadsheets/d/1dDdPD-flNXlgZ0E3ZxVvCDx27RFuhVWJrcfcjNu_I8k/edit#gid=0   301
+/muiengineeringlevels/  https://docs.google.com/spreadsheets/d/1dDdPD-flNXlgZ0E3ZxVvCDx27RFuhVWJrcfcjNu_I8k/edit#gid=0   301
+/case-study-convert-a-wordpress-multisite-instance-with-1200-websites-to-gutenberg-talk-at-oporto-wp-meetup   /avada-to-gutenberg/   301
+/case-study-convert-a-wordpress-multisite-instance-with-1200-websites-to-gutenberg-talk-at-oporto-wp-meetup/  /avada-to-gutenberg/   301
+/phpcs-wordcamp    /presentation-in-wordcamp-lisbon-2023/   302
+/phpcs-wordcamp/   /presentation-in-wordcamp-lisbon-2023/   302
+/investing-in-your-20s-30s    /how-im-investing-my-savings-in-my-20s-and-30s-a-guide/   302
+/investing-in-your-20s-30s/   /how-im-investing-my-savings-in-my-20s-and-30s-a-guide/   302
+/pprs    /pprs-when-are-they-worth-investing-in/   301
+/pprs/   /pprs-when-are-they-worth-investing-in/   301
+
+# Old post slugs (WordPress _wp_old_slug)
+/visualization-on-how-students-associate-courses-when-applying-to-colleges    /vis-students-associate-courses/   301
+/visualization-on-how-students-associate-courses-when-applying-to-colleges/   /vis-students-associate-courses/   301
+/visualization-of-admission-grades-to-college-courses    /vis-college-admission-grades/   301
+/visualization-of-admission-grades-to-college-courses/   /vis-college-admission-grades/   301
+/omeututor-reflection-on-an-entrepreneurial-venture    /omeututor-a-reflection/   301
+/omeututor-reflection-on-an-entrepreneurial-venture/   /omeututor-a-reflection/   301
+/buy-vs-rent-a-calculator    /buy-vs-rent-calculator/   301
+/buy-vs-rent-a-calculator/   /buy-vs-rent-calculator/   301
+# (avada-to-gutenberg's old slug is the long case-study URL, covered above)
+
+# The old guide index linked page 1 as /1/
+/how-im-investing-my-savings-in-my-20s-and-30s-a-guide/1/   /how-im-investing-my-savings-in-my-20s-and-30s-a-guide/   301
+
+# WordPress routes the static site doesn't have
+/category/*        /   301
+/tag/*             /   301
+/feed              /   301
+/feed/*            /   301
+/comments/feed/*   /   301
+/:slug/feed/       /   301
+/page/*            /   301
+/author/*          /   301
+/wp-admin/*        /   301
+/wp-login.php      /   301
