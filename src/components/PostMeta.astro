@@ -1,0 +1,14 @@
+---
+import { formatDate, isoDate, type Post } from '../site';
+
+interface Props {
+	post: Post;
+}
+const { data } = Astro.props.post;
+---
+
+<p class="post-meta">
+	<time datetime={ isoDate( data.date ) }>{ formatDate( data.date ) }</time>
+	<span aria-hidden="true">·</span>
+	<span>{ data.readingTime } min read</span>
+</p>

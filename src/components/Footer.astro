@@ -1,0 +1,29 @@
+---
+import { SITE, getPosts, postUrl } from '../site';
+import twitter from '../icons/twitter.svg?raw';
+import github from '../icons/github.svg?raw';
+import linkedin from '../icons/linkedin.svg?raw';
+import behance from '../icons/behance.svg?raw';
+
+const icons: Record<string, string> = { twitter, github, linkedin, behance };
+const pinned = ( await getPosts() ).filter( ( p ) => p.data.pinned );
+---
+
+<footer class="site-footer">
+	{ pinned.length > 0 && (
+		<nav class="pinned" aria-labelledby="pinned-title">
+			<h2 id="pinned-title">Pinned posts</h2>
+			<ul>
+				{ pinned.map( ( p ) => <li><a href={ postUrl( p ) }>{ p.data.title }</a></li> ) }
+			</ul>
+		</nav>
+	) }
+	<div class="colophon">
+		<p>{ SITE.tagline } Reach me at <a href={ `mailto:${ SITE.email }` }>{ SITE.email }</a>.</p>
+		<ul class="social">
+			{ SITE.social.map( ( s ) => (
+				<li><a href={ s.href } aria-label={ s.name } title={ s.name } set:html={ icons[ s.icon ] } /></li>
+			) ) }
+		</ul>
+	</div>
+</footer>

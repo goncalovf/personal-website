@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import { getPosts, postUrl } from '../site';
+
+const recent = ( await getPosts() ).slice( 0, 5 );
+---
+
+<Base title="Page not found">
+	<h1>Page not found</h1>
+	<p>That page doesn't exist, or it moved. Try one of the latest posts, or go to the <a href="/">home page</a>.</p>
+	<ul>
+		{ recent.map( ( p ) => <li><a href={ postUrl( p ) }>{ p.data.title }</a></li> ) }
+	</ul>
+</Base>
