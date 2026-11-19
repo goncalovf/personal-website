@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import PostMeta from '../components/PostMeta.astro';
+import { SITE, getPosts, postUrl } from '../site';
+
+const posts = await getPosts();
+const jsonLd = {
+	'@type': 'Blog',
+	'@id': Astro.site!.href,
+	name: SITE.name,
+	url: Astro.site!.href,
+	author: SITE.author,
+	inLanguage: SITE.language,
+};
+---
+
+<Base jsonLd={ jsonLd }>
+	<ol class="post-list">
+		{ posts.map( ( post ) => (
+			<li>
+				<article>
+					<h2><a href={ postUrl( post ) }>{ post.data.title }</a></h2>
+					<PostMeta post={ post } />
+					<p>{ post.data.description }</p>
+				</article>
+			</li>
+		) ) }
+	</ol>
+</Base>

@@ -1,0 +1,99 @@
+---
+// Classic, blocking scripts in a fixed order: the chart scripts use jQuery's .select2() and
+// D3 globals, and start in window.onload, so everything must be loaded before that fires.
+interface Props {
+	d3: string;
+	script: string;
+}
+const { d3, script } = Astro.props;
+---
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+<script is:inline src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script is:inline src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script is:inline src={ d3 }></script>
+<script is:inline src={ script }></script>
+
+<style is:global>
+	.viz {
+		overflow-x: auto;
+		margin-block: 1.5rem;
+	}
+	.viz .chart text {
+		fill: currentColor;
+		font: 10px sans-serif;
+	}
+	.viz .chart path {
+		fill: none;
+		stroke: currentColor;
+		shape-rendering: crispEdges;
+	}
+	.viz .chart .tick line {
+		stroke: currentColor;
+	}
+	div.tooltip {
+		position: absolute;
+		text-align: left;
+		padding: 5px;
+		font: 12px sans-serif;
+		background: #232f34;
+		border-radius: 3px;
+		color: #fff;
+		line-height: 1.75em;
+	}
+	div.tooltip a {
+		color: #fff;
+	}
+	/* Select2 in the site's colours, light and dark. Select2's stylesheet loads after this one,
+	   so every rule is prefixed with `html` to win on specificity. The dropdown is appended to <body>. */
+	html .select2-container {
+		font-family: var(--font);
+		font-size: 0.9375rem;
+	}
+	html .select2-container--default .select2-selection--single,
+	html .select2-container--default .select2-selection--multiple,
+	html .select2-dropdown {
+		background: var(--bg);
+		color: var(--text);
+		border-color: var(--border);
+	}
+	html .select2-container--default .select2-selection--single,
+	html .select2-container--default .select2-selection--multiple {
+		border-radius: 4px;
+	}
+	html .select2-container--default.select2-container--focus .select2-selection--multiple,
+	html .select2-container--default.select2-container--open .select2-selection--single {
+		border-color: var(--accent);
+	}
+	html .select2-container--default .select2-selection--single .select2-selection__rendered,
+	html .select2-container--default .select2-search--inline .select2-search__field {
+		color: var(--text);
+	}
+	/* Selected options in the multi-select. */
+	html .select2-container--default .select2-selection--multiple .select2-selection__choice {
+		background: var(--surface);
+		color: var(--text);
+		border-color: var(--border);
+	}
+	html .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+		color: var(--muted);
+		border-color: var(--border);
+	}
+	html .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover,
+	html .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:focus {
+		background: var(--border);
+		color: var(--text);
+	}
+	html .select2-container--default .select2-search--dropdown .select2-search__field {
+		background: var(--bg);
+		color: var(--text);
+		border-color: var(--border);
+	}
+	html .select2-container--default .select2-results__option--selected {
+		background: var(--surface);
+	}
+	html .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+		background: var(--accent);
+		color: var(--bg);
+	}
+</style>

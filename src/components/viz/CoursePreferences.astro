@@ -1,0 +1,21 @@
+---
+// Interactive chart from 2018, kept as-is: jQuery + Select2 for the course picker, D3 v5 for the chart.
+// The script fetches its CSV from the old theme path, which public/ still serves.
+import VizScripts from './VizScripts.astro';
+---
+
+<div class="viz">
+	<p id="menu">
+		Course:
+		<select name="ref"></select>
+	</p>
+	<svg class="chart"></svg>
+</div>
+
+<VizScripts d3="https://cdn.jsdelivr.net/npm/d3@5.16.0/dist/d3.min.js" script="/viz/courses-preference-association.js" />
+
+<style is:global>
+	#menu .select2-container {
+		min-width: min(600px, 100%);
+	}
+</style>

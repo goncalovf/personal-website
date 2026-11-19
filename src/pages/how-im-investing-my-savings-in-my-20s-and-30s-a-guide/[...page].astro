@@ -1,0 +1,80 @@
+---
+// The guide keeps WordPress's paginated URLs: page 1 at /slug/, page N at /slug/N/.
+import { getCollection, getEntry, render, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PostMeta from '../../components/PostMeta.astro';
+import GuideIndex, { type IndexItem } from '../../components/GuideIndex.astro';
+import { blogPosting } from '../../components/blogPosting';
+import { GUIDE_SLUG, isoDate } from '../../site';
+import index from '../../data/guide-index.json';
+
+export async function getStaticPaths() {
+	const pages = ( await getCollection( 'guide' ) ).sort( ( a, b ) => a.data.page - b.data.page );
+	return pages.map( ( entry ) => ( {
+		params: { page: entry.data.page === 1 ? undefined : String( entry.data.page ) },
+		props: { entry, total: pages.length },
+	} ) );
+}
+
+const { entry, total } = Astro.props as { entry: CollectionEntry<'guide'>; total: number };
+const post = ( await getEntry( 'posts', GUIDE_SLUG ) )!;
+const { Content } = await render( entry );
+
+const page = entry.data.page;
+const base = `/${ GUIDE_SLUG }/`;
+const pageUrl = ( n: number ) => ( n === 1 ? base : `${ base }${ n }/` );
+const url = new URL( pageUrl( page ), Astro.site );
+const items = index as IndexItem[];
+const chapter = items.flatMap( function flat( i: IndexItem ): IndexItem[] {
+	return [ i, ...( i.Children ?? [] ).flatMap( flat ) ];
+} ).find( ( i ) => Number( i.Page ) === page && !i.HeadingID );
+
+const whole = blogPosting( post, new URL( base, Astro.site ) );
+const jsonLd = page === 1 ? whole : {
+	...whole,
+	'@id': String( url ),
+	mainEntityOfPage: String( url ),
+	url: String( url ),
+	headline: chapter ? `${ post.data.title }: ${ chapter.Heading }` : post.data.title,
+	isPartOf: whole,
+};
+---
+
+<Base
+	title={ page === 1 ? post.data.title : `${ chapter?.Heading ?? `Page ${ page }` } – ${ post.data.title }` }
+	description={ post.data.description }
+	jsonLd={ jsonLd }
+	article={ { published: isoDate( post.data.date ), modified: isoDate( post.data.updated ), tags: post.data.tags } }
+	wide
+>
+	<div class="guide">
+		<nav class="guide-index" aria-label="Guide index">
+			<h2>Index</h2>
+			<GuideIndex items={ items } base={ base } page={ page } />
+		</nav>
+		<article class="post">
+			<header>
+				{ page === 1 ? (
+					<>
+						<h1>{ post.data.title }</h1>
+						<PostMeta post={ post } />
+					</>
+				) : (
+					<p class="guide-title"><a href={ base }>{ post.data.title }</a></p>
+				) }
+				<details class="guide-index-mobile">
+					<summary>Index · page { page } of { total }</summary>
+					<GuideIndex items={ items } base={ base } page={ page } />
+				</details>
+			</header>
+			<div class="prose">
+				<Content />
+			</div>
+			<nav class="pager" aria-label="Guide pages">
+				{ page > 1 ? <a rel="prev" href={ pageUrl( page - 1 ) }>← Previous</a> : <span /> }
+				<span>{ page } / { total }</span>
+				{ page < total ? <a rel="next" href={ pageUrl( page + 1 ) }>Next →</a> : <span /> }
+			</nav>
+		</article>
+	</div>
+</Base>
