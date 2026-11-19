@@ -1,26 +1,2 @@
-# Docker
-docker-compose.yml
-
-# Uploads
-website-files/wp-content/uploads
-
-# Data used for posts
-website-files/wp-content/themes/goncalovf-theme/content/post-data
-
-# Other themes besides mine
-website-files/wp-content/themes/*
-!website-files/wp-content/themes/goncalovf-theme
-
-# VS Code
+.env
 .vscode
-
-# Misc
-website-files/wp-config.php
-index.php
-.buildcomplete
-# Local environment
-/.env
-/certs
-/vendor
-debug.log
-*.sql
