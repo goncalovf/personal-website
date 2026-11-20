@@ -1,0 +1,9 @@
+// Serves the static build in dist/ (including _redirects) as a Worker with static assets.
+{
+	"name": "personal-website",
+	"compatibility_date": "2026-11-01",
+	"assets": {
+		"directory": "./dist",
+		"not_found_handling": "404-page"
+	}
+}
